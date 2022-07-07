@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="goal_parameters"	 default="$(find wheelchair_simulation_controller)/params/goals.yaml" />
+
+
+	<node name="goalgenerator" pkg="wheelchair_simulation_controller" type="goalgenerator" output="screen" >
+		<rosparam subst_value="True" file="$(arg goal_parameters)" command="load" />
+	</node>
+
+
+</launch>

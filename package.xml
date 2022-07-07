@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>wheelchair_simulation_controller</name>
+  <version>0.0.1</version>
+  <description>CNBI Wheelchair Simulation package</description>
+  <author email="luca.tonin@dei.unipd.it">Luca Tonin</author>
+  <maintainer email="luca.tonin@dei.unipd.it">Luca Tonin</maintainer>
+
+  <license>GPLv3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf</depend>
+  <exec_depend>message_runtime</exec_depend>
+
+</package>

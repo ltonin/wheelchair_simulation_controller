@@ -1,0 +1,26 @@
+user:
+    probability_inc: 1.00             # Probability to generate a random command during INC
+    probability_acc: 1.00             # Probability to generate a correct command
+    min_delivery_time: 0.0            # Minimum time to delivery a command
+    max_delivery_time: 1.0            # Maximum time to delivery a command
+    refractory_period: 5.0            # Refractory period between command
+
+    #user:
+    #    probability_inc: 0.70             # Probability to generate a random command during INC
+    #    probability_acc: 0.85             # Probability to generate a correct command
+    #    min_delivery_time: 2.0            # Minimum time to delivery a command
+    #    max_delivery_time: 4.0            # Maximum time to delivery a command
+    #    refractory_period: 5.0            # Refractory period between command
+
+target:
+    topic:        "/current_goal"     # Subscribed topic for target position
+    front_sector: 0.5235              # [rad] (i.e., 30.0f degrees)
+
+command:
+    frame_id:         "hokuyo_link"   # Frame id of the commands
+    topic:            "/bci_command"   # Publishing topic for the generated commands
+    angle_left:       2.356           # [rad] (i.e., -45 degrees)
+    angle_right:      0.785           # [rad] (i.e.,  45 degrees)
+    angle_forward:    1.570           # [rad] (i.e.,   0 degrees)
+    distance:         1.000           # [m]  
+

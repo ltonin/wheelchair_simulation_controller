@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="cmd_parameters"	 default="$(find wheelchair_simulation_controller)/params/param_command_generator.yaml" />
+
+
+	<node name="commandgenerator" pkg="wheelchair_simulation_controller" type="commandgenerator" output="screen" >
+		<rosparam subst_value="True" file="$(arg cmd_parameters)" command="load" />
+	</node>
+
+
+</launch>
